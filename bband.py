@@ -10,13 +10,13 @@ import time
 import saveToExcel
 from datetime import datetime
 from time import sleep
-
+from key import api, secret
 
 
 # 連接到 Binance 交易所
 binance = ccxt.binance({
-    'apiKey': 'sZUB1ZrH3cyMWTAeHszMCV5TyZMqdffLp9uI8y73VsVb71nj7AQJAp9R9gHM9lwp',
-    'secret': '8spbVj9p4Xn5mkOc2Z0ObKIg6lqhCKBybIiSXY2ieUld4wJZFeB0EH9maEnt69J7',
+    'apiKey': api,
+    'secret': secret,
     'enableRateLimit': True,
 })
 
